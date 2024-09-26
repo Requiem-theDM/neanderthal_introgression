@@ -13,9 +13,7 @@
 │   ├── data_clean      <- clean version of the data
 │   └── data_raw        <- raw data (don't touch)
 ├── diss
-│   ├── manuscripts
-│   ├── posters
-│   └── presentations
-├── doc      <- documentation, e.g. data management plan
+│   └── presentations   <- end of semester presentation
+├── doc                 <- documentation, e.g. data management plan
 └── misc                <- miscellaneous files that don't fit elsewhere
 ```
