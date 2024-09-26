@@ -1,19 +1,18 @@
 # Quantitative Biology 2024 Research Project
 
-## Josh Beale, Caroline Moore, Fijare Pious
+## Josh Beale, Caroline Moore, Fijare Plous
 
 ```
 .
 ├── README.md
+├── requirements.txt    <- software (and versions)
 ├── analysis            <- all things data analysis
-├── comm
-│   ├── internal_comm   <- internal communication such as meeting notes
-│   └── journal_comm    <- communication with the journal, e.g. peer review
+├── comm                <- internal communication such as meeting notes
 ├── data
 │   ├── data_clean      <- clean version of the data
-│   └── data_raw        <- raw data (don't touch)
+│   └── data_raw        <- raw data (don't touch) (Or links to obtaining it)
 ├── diss
 │   └── presentations   <- end of semester presentation
-├── doc                 <- documentation, e.g. data management plan
+├── doc                 <- documentation
 └── misc                <- miscellaneous files that don't fit elsewhere
 ```
