@@ -35,3 +35,4 @@ data/data_raw/eQTL_finemapping_results/eQTL_finemapping.credibleSet_summary.MAGE
 data/data_raw/eQTL_finemapping_results/eQTL_finemapping.allAssociations.MAGE.v1.0.txt.gz.tbi
 data/data_raw/eQTL_finemapping_results/eQTL_finemapping.allAssociations.MAGE.v1.0.txt.gz
 /data
+analysis/log.txt
