@@ -19,7 +19,7 @@
     - Match type defaults to Neanderthals and accepts any of the following in a case-insensitive manner:
         - Neanderthal match type: n, nmatch, neanderthal
         - Denisovan match type: d, dmatch, denisovan
-        - Both match type: b, bmatch, both
+        - Both match types: b, bmatch, both
         - Either match type: e, ematch, either
     - Search file defaults to eQTL_finemapping.significantAssociations.MAGE.v1.0.txt and accepts either of the following in a case-insensitive manner:
         - SNPs with Significant Associations: sig
