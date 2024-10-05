@@ -1,0 +1,38 @@
+New Alignment Session
+Start Time: 2024-10-05 08:38:05.214361
+## Performing Alignment with PIP = 0.0, looking for either Denisovan or Neaderthal matches in SNPs with significant associations.
+## Importing eQTL for SNPs with significant associations.
+## Importing SPrime data for all Population Groups.
+## Splitting eQTLs by chromosome.
+## eQTLs were found for 22 chromosomes.
+## Splitting introgressions by chromosome.
+## Introgressions were found in 22 chromosomes.
+## Attempting to align Introgressions with eQTLs.
+## Aligning Chromosome 1 out of 22.
+## Aligning Chromosome 2 out of 22.
+## Aligning Chromosome 3 out of 22.
+## Aligning Chromosome 4 out of 22.
+## Aligning Chromosome 5 out of 22.
+## Aligning Chromosome 6 out of 22.
+## Aligning Chromosome 7 out of 22.
+## Aligning Chromosome 8 out of 22.
+## Aligning Chromosome 9 out of 22.
+## Aligning Chromosome 10 out of 22.
+## Aligning Chromosome 11 out of 22.
+## Aligning Chromosome 12 out of 22.
+## Aligning Chromosome 13 out of 22.
+## Aligning Chromosome 14 out of 22.
+## Aligning Chromosome 15 out of 22.
+## Aligning Chromosome 16 out of 22.
+## Aligning Chromosome 17 out of 22.
+## Aligning Chromosome 18 out of 22.
+## Aligning Chromosome 19 out of 22.
+## Aligning Chromosome 20 out of 22.
+## Aligning Chromosome 21 out of 22.
+## Aligning Chromosome 22 out of 22.
+## 140 Alignments were found out of 2845283423904317 introgressions across 232254 SNPs.
+## Alignment Density: 0.0006027883265734928
+## Introgression Enrichment in Searched Genes: 6.355658506733322e-10
+Stop Time: 2024-10-05 09:17:06.942922
+Total Runtime: 0:39:01.728561
+
