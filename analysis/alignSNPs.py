@@ -74,22 +74,22 @@ def processArgs():
     with Logging("log.txt"):
         if matchin == "sig":
             if matchtype == "dmatch":
-                print(f"## Performing Alignment with PIP = {pip}, looking for Denovian matches in SNPs with significant associations.")
+                print(f"## Performing Alignment with PIP = {pip}, looking for Denisovan matches in SNPs with significant associations.")
             elif matchtype == "nmatch":
                 print(f"## Performing Alignment with PIP = {pip}, looking for Neaderthal matches in SNPs with significant associations.")
             elif matchtype == "both":
-                print(f"## Performing Alignment with PIP = {pip}, looking for both Denovian and Neaderthal matches in SNPs with significant associations.")
+                print(f"## Performing Alignment with PIP = {pip}, looking for both Denisovan and Neaderthal matches in SNPs with significant associations.")
             elif matchtype == "either":
-                print(f"## Performing Alignment with PIP = {pip}, looking for either Denovian or Neaderthal matches in SNPs with significant associations.")
+                print(f"## Performing Alignment with PIP = {pip}, looking for either Denisovan or Neaderthal matches in SNPs with significant associations.")
         else:
             if matchtype == "dmatch":
-                print(f"## Performing Alignment with PIP = {pip}, looking for Denovian matches in SNPs with any association.")
+                print(f"## Performing Alignment with PIP = {pip}, looking for Denisovan matches in SNPs with any association.")
             elif matchtype == "nmatch":
                 print(f"## Performing Alignment with PIP = {pip}, looking for Neaderthal matches in SNPs with any association.")
             elif matchtype == "both":
-                print(f"## Performing Alignment with PIP = {pip}, looking for both Denovian and Neaderthal matches in SNPs with any association.")
+                print(f"## Performing Alignment with PIP = {pip}, looking for both Denisovan and Neaderthal matches in SNPs with any association.")
             elif matchtype == "either":
-                print(f"## Performing Alignment with PIP = {pip}, looking for either Denovian or Neaderthal matches in SNPs with any association.")
+                print(f"## Performing Alignment with PIP = {pip}, looking for either Denisovan or Neaderthal matches in SNPs with any association.")
 
     return pip, matchtype, matchin
 
@@ -274,6 +274,8 @@ def alignSNPs(eqtls, introgressions, alignedSNPs):
     baseschecked = 0
     introgressioncount = 0
     for chromosome in range(len(eqtls)):
+        with Logging("log.txt"):
+            print(f"## Aligning Chromosome {chromosome + 1} out of {len(eqtls)}.")
         for eqtl in eqtls[chromosome]:
             for introgression in introgressions[chromosome]:
                 if eqtl.pos == introgression.pos and eqtl.snp == introgression.snp:
@@ -298,7 +300,6 @@ def outputAlignments(start_time, pip, matchtype, matchin, alignedSNPs):
 def main():
     start_time = datetime.now()
     with Logging("log.txt"):
-        print(f"")
         print(f"New Alignment Session")
         print(f"Start Time: {start_time}")
 
@@ -324,6 +325,7 @@ def main():
     with Logging("log.txt"):
         print(f"Stop Time: {stop_time}")
         print(f"Total Runtime: {runtime}")
+        print(f"")
 
 if __name__ == "__main__":
     main()
