@@ -93,6 +93,7 @@ def importeQTLs(pip, matchin):
         eqtls["variantChrom"] = eqtls["variantChrom"].str[3:]
         eqtls["variantChrom"] = eqtls["variantChrom"].astype("int64")
         eqtls = eqtls[eqtls.variantPIP>pip]
+        baseschecked = eqtls.shape[0]
 
     if matchin == "sig":
         eqtls = pd.read_csv("../data/data_clean/eQTL_finemapping/eQTL_finemapping.significantAssociations.MAGE.v1.0.txt",sep="\t")
