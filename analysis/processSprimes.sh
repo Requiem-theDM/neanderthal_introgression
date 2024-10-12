@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -e "CHROM\tPOS\tID\tREF\ALT\tSEGMENT\tALLELE\tSCORE\tNMATCH\tDMATCH\tPOSGROUP"> ../data/data_clean/Sprime_results/combinedSprimes.tsv
+echo -e "variantChrom\tvariantPosition\tID\tREF\tvariantAlt\tSEGMENT\tALLELE\tSCORE\tNMATCH\tDMATCH\tPOPGROUP"> ../data/data_clean/Sprime_results/combinedSprimes.tsv
 for file in ../data/data_clean/Sprime_results/*.ND_match
 do
     popgroup="${file#*/}"
