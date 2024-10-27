@@ -97,7 +97,7 @@ def importeQTLs(pip, matchin):
 
     if matchin == "sig":
         eqtls = pd.read_csv("../data/data_clean/eQTL_finemapping/eQTL_finemapping.significantAssociations.MAGE.v1.0.txt",sep="\t")
-        eqtls = eqtls.drop(columns=["variantRef","variant_kgpID","variant_rsID","geneSymbol","variantCredibleSet"])
+        eqtls = eqtls.drop(columns=["variantRef","variant_kgpID","geneSymbol","variantCredibleSet"])
         eqtls = eqtls[eqtls.variantChrom != "chrX"]
         eqtls["variantChrom"] = eqtls["variantChrom"].str[3:]
         eqtls["variantChrom"] = eqtls["variantChrom"].astype("int64")
@@ -110,7 +110,7 @@ def importSprimes(matchtype):
             print(f"## Importing SPrime data for all Population Groups.")
     
     introgressions = pd.read_csv("../data/data_clean/Sprime_results/combinedSprimes.tsv",sep="\t")
-    introgressions = introgressions.drop(columns=["ID","REF","SEGMENT","ALLELE","SCORE"])
+    introgressions = introgressions.drop(columns=["REF","SEGMENT","ALLELE","SCORE"])
     if matchtype == "nmatch":
         introgressions = introgressions[introgressions.NMATCH=="match"]
     elif matchtype == "dmatch":

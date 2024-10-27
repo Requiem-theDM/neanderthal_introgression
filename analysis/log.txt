@@ -58,3 +58,15 @@ Start Time: 2024-10-11 21:51:34.644768
 Stop Time: 2024-10-11 21:55:45.852513
 Total Runtime: 0:04:11.207974
 
+New Alignment Session
+Start Time: 2024-10-14 14:52:32.872266
+## Performing Alignment with PIP = 0.0, looking for either Denisovan or Neaderthal matches in SNPs with any association.
+## Importing eQTL for SNPs with any association.
+## Importing SPrime data for all Population Groups.
+## Looking for matches between eQTLs and Introgressions.
+## 147412 Alignments were found out of 97046.15 introgressions across 164253712 SNPs.
+## Alignment Density: 0.000897465257893228
+## Introgression Enrichment in Searched Genes: 27.743457867001254
+Stop Time: 2024-10-14 14:57:09.427096
+Total Runtime: 0:04:36.555181
+
