@@ -13,6 +13,7 @@ Our project aims to replicate Figure 4 from McCoy et al., 2017, titled “Impact
 
 ## Software Requirements
 - Python version 3.12.3 or higher
+- Pandas version 2.2.2 or higher
 - R version 4.4.1 or higher
 - GNU bash, version 3.2.57(1)-release or higher
 
