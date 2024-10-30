@@ -1,0 +1,52 @@
+# Handling Command-line Arguments: The current processArgs() function only checks if arguments exist, but does not handle errors or give useful feedback when missing arguments are detected. It would be more robust to provide defaults for each parameter if none is supplied, but still alert the user about the missing parameters.
+
+def processArgs():
+    pip = float(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1].isdigit() else 0.5
+    matchtype = sys.argv[2].lower() if len(sys.argv) > 2 else "nmatch"
+    matchtype = {
+        "d": "dmatch", "n": "nmatch", "b": "both", "e": "either"
+    }.get(matchtype, "nmatch")
+
+    matchin = sys.argv[3].lower() if len(sys.argv) > 3 else "sig"
+    matchin = "all" if matchin in ["all", "any"] else "sig"
+    
+    print(f"## Performing alignment with PIP = {pip}, looking for {matchtype} matches in SNPs with {matchin} association.")
+    
+    return pip, matchtype, matchin
+
+# Matching Fields in importSprime: The importSprime() function checks if the introgressions match based on the "nmatch" or "dmatch" fields. However, you're not checking the chromosome position (pos), which is essential to verify introgressions. It is also important to ensure that fields like fields[8] and fields[9] are parsed correctly.
+
+def importSprime(matchtype, introgressions):
+    with Logging("log.txt"):
+        print(f"## Importing SPrime data for all Population Groups.")
+    
+    with open(f"../data/data_clean/Sprime_results/combinedSprimes.tsv") as file:
+        file.readline()
+        for line in file:
+            fields = line.split()
+            chrom, pos, snp, nmatch, dmatch, popgroup = fields[0], fields[1], fields[4], fields[8], fields[9], fields[10]
+            
+            if matchtype == "both" and nmatch == "match" and dmatch == "match":
+                introgressions.append(Sprime(chrom, pos, snp, nmatch, dmatch, popgroup))
+            elif matchtype == "either" and (nmatch == "match" or dmatch == "match"):
+                introgressions.append(Sprime(chrom, pos, snp, nmatch, dmatch, popgroup))
+            elif matchtype == "dmatch" and dmatch == "match":
+                introgressions.append(Sprime(chrom, pos, snp, nmatch, dmatch, popgroup))
+            elif matchtype == "nmatch" and nmatch == "match":
+                introgressions.append(Sprime(chrom, pos, snp, nmatch, dmatch, popgroup))
+
+# File Reading in importSprime() and importeQTL(): Both functions assume a specific file path and structure (fields[0] etc.). Ensure that the file format exactly matches this, and handle potential file parsing errors.
+
+class Logging:
+    def __init__(self, filename):
+        self.out_file = open(filename, "w")  # Change "a" to "w" to overwrite at start
+        self.old_stdout = sys.stdout
+        sys.stdout = self
+
+# Logging: The logging setup is functional but could be better managed with a context manager or external logging library for flexibility. Also, the log file is opened in append mode each time. You may want to clear it at the beginning of the script, especially for multiple runs.
+
+def matchSNPs(eqtls, introgressions):
+    for eqtl in eqtls:
+        for introgression in introgressions:
+            if eqtl.chrom == introgression.chrom and eqtl.pos == introgression.pos:
+                print(f"Matching SNP found: {eqtl.snp}")
