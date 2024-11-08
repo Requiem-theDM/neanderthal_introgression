@@ -25,5 +25,6 @@
     - Search file defaults to eQTL_finemapping.significantAssociations.MAGE.v1.0.txt and accepts either of the following in a case-insensitive manner:
         - SNPs with Significant Associations: sig
         - SNPs with Any Association: all, any
+    - `-ni` can be optionally specified to perform an inverted search and look for SNPs that were not found in the specified introgression group.
 - alignSNPs prints logs of each run to log.txt, stored in the analysis folder.
 - alignSNPs outputs matched SNPs stamped with search start date, start time, and parameters in a tab separated values format in the data/data_clean/Alignments directory.
