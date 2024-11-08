@@ -2,8 +2,8 @@
 
 1. Clone this git repository. 
 2. Download all files from the following links to the data/data_raw directory:
-- https://www.dropbox.com/scl/fo/3filfi60qhxgokmjb6weq/AGLqwdegrXF5NUYqAl7EI6Q/QTL_results/eQTL_results/eQTL_finemapping_results?dl=0&rlkey=ihnv8hpbj1ilb96cxsm8fc42p&subfolder_nav_tracking=1
-- https://data.mendeley.com/datasets/y7hyt83vxr/1
+- [eQTL Files](https://www.dropbox.com/scl/fo/3filfi60qhxgokmjb6weq/AGLqwdegrXF5NUYqAl7EI6Q/QTL_results/eQTL_results/eQTL_finemapping_results?dl=0&rlkey=ihnv8hpbj1ilb96cxsm8fc42p&subfolder_nav_tracking=1)
+- [SPrime Data](https://data.mendeley.com/datasets/y7hyt83vxr/1)
 
 3. You should have two .zip folders in your data_raw directory.
 
