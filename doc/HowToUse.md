@@ -13,8 +13,9 @@
 5. In terminal, run the following command:
 - `./processSprimes.sh`
 
-6. In terminal, run the following command:
-- `./alignSNPs.py`
+6. In terminal, run the following commands to generate datasets for downstream analysis:
+- `./alignSNPs.py 0 e all`
+- `./alignSNPs.py 0 e all -ni`
 - alignSNPs takes the following parameters: desired PIP search value, desired match type, and desired search file, **in that order.**
     - PIP search value defaults to 0.5, and accepts any number
     - Match type defaults to Neanderthals and accepts any of the following in a case-insensitive manner:
