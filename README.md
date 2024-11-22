@@ -2,7 +2,8 @@
 ## Josh Beale, Caroline Moore, Fijare Plous
 
 ## Project Description
-Our project aims to replicate Figure 4 from McCoy et al., 2017, titled “Impacts of Neanderthal-introgressed sequences on the landscape of human gene expression.” This figure visualizes purifying selection on the gradual movement of genes from one species into the gene pool of another, via the hybridization of humans and Neanderthals. The analysis within the figure looks at allele frequency classification between Neanderthal genes that have moved into the human population and those that have not. Ultimately McCoy et. al. found no significant differences in allele-specific expression between introgressed and non-introgressed variants.
+Our project aims to replicate Figure 4 from McCoy et al., 2017, titled “Impacts of Neanderthal-introgressed sequences on the landscape of human gene expression.” This figure visualizes purifying selection on the gradual movement of genes from one species into the gene pool of another, via the hybridization of humans and Neanderthals. The analysis within the figure looks at allele frequency classification between Neanderthal genes that have moved into the human population and those that have not. Ultimately McCoy et. al. found no significant differences in allele-specific expression between introgressed and non-introgressed variants. Our project seeks to not only replicate these findings but to expand on them by analyzing the introgression of alleles from Denisovans—another extinct human subspecies that interbred with Homo sapiens. 
+
 
 ## Figure Example
 - https://www.ncbi.nlm.nih.gov/pmc/articles/instance/6219754/bin/nihms-848864-f0004.jpg 
