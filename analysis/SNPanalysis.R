@@ -43,7 +43,8 @@ all = ggplot(combined_df) +
   
 
 ggdraw(all + theme_half_open(12)) +
-  draw_plot(inset, .25, .25, .5, .5)
+  draw_plot(inset, .25, .25, .5, .5) +
+  ggsave(filename = "FirstDraftGraph.png")
 
            
        
