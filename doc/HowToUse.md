@@ -29,3 +29,10 @@
     - `-ni` can be optionally specified to perform an inverted search and look for SNPs that were not found in the specified introgression group.
 - alignSNPs prints logs of each run to log.txt, stored in the analysis folder.
 - alignSNPs outputs matched SNPs stamped with search start date, start time, and parameters in a tab separated values format in the data/data_clean/Alignments directory.
+
+## Using R script
+
+1. Once alignments have been generated, open R files within RStudio
+2. Ensure that the file used for file_path matches the file you generated using ./alignSNPs.py 0 e all within your data_clean directory
+   - This file should be the ONLY the introgressed data (no non-introgressed data needs to be loaded.)
+3. Run R code line by line to generate plots
