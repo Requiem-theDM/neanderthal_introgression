@@ -27,7 +27,8 @@ Our project aims to replicate Figure 4 from McCoy et al., 2017, titled “Impact
 - Derived Allele Frequency vs. Number of SNPs
 - Significant differences in the estimated proportions of introgressed (pN) and non-introgressed (pH) variants showing significant ASE (at 10% FDR), stratified by derived allele frequency
 
-
+## End of Term Presentation
+[The slide deck for our presentation is available here.](https://docs.google.com/presentation/d/1InTnAfotq8y3MgHqU8PTZ328DmD4UdptEyXa_lIMsGQ/edit?usp=sharing)
 ```
 Repository Structure
 .
