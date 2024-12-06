@@ -36,3 +36,11 @@
 2. Ensure that the file used for file_path matches the file you generated using ./alignSNPs.py 0 e all within your data_clean directory
    - This file should be the ONLY the introgressed data (no non-introgressed data needs to be loaded.)
 3. Run R code line by line to generate plots
+
+## Identifying SNPs of Interest for Further Analysis
+
+1. Open IDSNPsForLitSearch.R in R Studio.
+    - Ensure file path matches file generated and working directory is accurately set. 
+    - The code currently is set to identify SNPs matching both Denisovans and Neanderthals with significant associations. 
+    - Adjust the PIP threshold if desired (currently set at 0.4). 
+3. Run all lines to identify SNPs of interest from the dataset.
