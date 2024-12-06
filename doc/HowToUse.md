@@ -32,7 +32,9 @@
 
 ## Using R script
 
-1. Once alignments have been generated, open R files within RStudio
+1. Once alignments have been generated, open R files (Number_of_SNPs_per_POPGROUP_Neanderthals_and_Denisovan(SIGNIFICANTVARIANTS).R,
+Number_of_SNPs_per_POPGROUP_Neanderthals_and_Denisovan.R, UniqueSNPsAssociatedwithEachPopulationGroup(AllVariants).R,
+UniqueSNPsAssociatedwithEachPopulationGroup(SignificantVariants).R within RStudio)
 2. Ensure that the file used for file_path matches the file you generated using ./alignSNPs.py 0 e all within your data_clean directory
    - This file should be the ONLY the introgressed data (no non-introgressed data needs to be loaded.)
 3. Run R code line by line to generate plots
